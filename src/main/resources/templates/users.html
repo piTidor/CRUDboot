@@ -30,7 +30,7 @@
                 <form th:method="GET" th:action="@{/user_{id}/edit-user(id=${user.getId()})}">
                     <input type="submit" value="Обновить"/>
                 </form>
-                <form th:method="DELETE" th:action="@{/user_{id}(id=${user.getId()})}">
+                <form th:method="GET" th:action="@{delete/user_{id}(id=${user.getId()})}">
                     <input type="submit" value="Удалить"/>
                 </form>
             </td>
